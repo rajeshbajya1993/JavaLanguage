@@ -1,4 +1,8 @@
 package oops.exceptions;
+import java.util.Date;
+import java.util.List;
+
+import ds.array.*;
 
 public class Excep {
 
@@ -14,7 +18,9 @@ public class Excep {
 	}
 	public static void main(String[] args) {
 		Excep ex = new Excep();
-		ex.get(null);
+		GenericArray gc = new GenericArray();
+		List<String> list =gc.getDateRangeUtil(new Date(), "month");
+		System.out.println(list);
 
 	}
 
