@@ -88,8 +88,10 @@ import java.io.FileReader;
 
 public class SpecialIDE {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
+		SpecialIDE sp = new SpecialIDE();
+		sp.fileWriterReader();
 
 	}
 	public void fileWriterReader() throws Exception {
