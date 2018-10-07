@@ -6,9 +6,9 @@
  * then in output it must starts with position (112,12).
  * 
  * Testing.java file content for this example, Put some multi-line comments for tetsing
- * ==============================================================================================
- * 
- * package oops.io;
+  ==============================================================================================
+  
+  package oops.io;
 
 import java.io.*;
 import java.util.Arrays;
