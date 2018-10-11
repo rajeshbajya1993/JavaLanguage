@@ -6,7 +6,9 @@ public class MiscIO {
 
 	public static void main(String[] args) throws Exception {
 		MiscIO misc = new MiscIO();
-		misc.fileWriterReader();
+//		misc.fileWriterReader();
+		String ruleFile=System.getProperty("java.io.tmpdir");
+		System.out.println(ruleFile);
 //		Console c=System.console();    
 //		System.out.println("Enter password: "); 
 //		
