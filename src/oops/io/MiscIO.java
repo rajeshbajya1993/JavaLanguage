@@ -7,8 +7,8 @@ public class MiscIO {
 	public static void main(String[] args) throws Exception {
 		MiscIO misc = new MiscIO();
 //		misc.fileWriterReader();
-		String ruleFile=System.getProperty("java.io.tmpdir");
-		System.out.println(ruleFile);
+//		String ruleFile=System.getProperty("java.io.tmpdir");
+//		System.out.println(ruleFile);
 //		Console c=System.console();    
 //		System.out.println("Enter password: "); 
 //		
@@ -16,6 +16,10 @@ public class MiscIO {
 //		String pass=String.valueOf(ch);//converting char array into string    
 //		System.out.println("Password is: "+pass); 
 		
+		FileOutputStream fout  = new FileOutputStream("rajesh.txt");
+		String str;
+		str = "ुलिस का मानना है कि आरोपित दो नहीं बल्कि एक ही है। ";
+		System.out.println(str);
 		
 
 	}
