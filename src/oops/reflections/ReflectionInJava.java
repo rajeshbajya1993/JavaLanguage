@@ -13,7 +13,7 @@ public static String dump(Object o, int callCount) {
         tabs.append("\t");
     }
     StringBuffer buffer = new StringBuffer();
-    Class oClass = o.getClass();
+    Class<?> oClass = o.getClass();
     if (oClass.isArray()) {
         buffer.append("\n");
         buffer.append(tabs.toString());
