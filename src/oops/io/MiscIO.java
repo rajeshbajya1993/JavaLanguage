@@ -2,6 +2,7 @@ package oops.io;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.List;
 public class MiscIO {
 
 	public static void main(String[] args) throws Exception {
@@ -16,12 +17,17 @@ public class MiscIO {
 //		String pass=String.valueOf(ch);//converting char array into string    
 //		System.out.println("Password is: "+pass); 
 		
-		FileOutputStream fout  = new FileOutputStream("rajesh.txt");
-		String str;
-		str = "ुलिस का मानना है कि आरोपित दो नहीं बल्कि एक ही है। ";
-		System.out.println(str);
+//		FileOutputStream fout  = new FileOutputStream("rajesh.txt");
+//		String str;
+//		str = "ुलिस का मानना है कि आरोपित दो नहीं बल्कि एक ही है। ";
+//		System.out.println(str);
 		
-
+		byte [] arr = "Rajesh you are a good boy".getBytes();
+		System.out.println(Arrays.toString(arr));
+//		List<Integer> list = new ArrayList<>();
+		OutputStream os;
+		InputStream is;
+		BufferedInputStream p;
 	}
 	public void fileWriterReader() throws Exception {
 //		FileWriter fw = new FileWriter("C:\\Users\\rbajya.ORADEV\\Desktop\\Testing.txt");
