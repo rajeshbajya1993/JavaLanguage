@@ -11,7 +11,7 @@ public class ExecutorServc {
 	}
 	
 	public static void main(String[] args) {
-		ExecutorService ex = Executors.newFixedThreadPool(5);
+		ExecutorService ex = Executors.newCachedThreadPool();
 		ExecutorServc sc = new ExecutorServc();
 		ExecutorServc.ThreadTest te = sc.new  ThreadTest();
 		Future<?> f = null;
@@ -19,7 +19,7 @@ public class ExecutorServc {
 			 f =ex.submit(te);
 
 		}
-		System.out.println(f.isDone());
+		
 
 		
 	}
