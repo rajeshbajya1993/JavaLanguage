@@ -18,6 +18,7 @@ public class Excep {
 	}
 	public static void main(String[] args) {
 		Excep ex = new Excep();
+		ex.get("Rajesh");
 		GenericArray gc = new GenericArray();
 		List<String> list =gc.getDateRangeUtil(new Date(), "month");
 		System.out.println(list);

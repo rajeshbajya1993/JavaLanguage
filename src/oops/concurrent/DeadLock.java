@@ -9,6 +9,12 @@ public class DeadLock implements Runnable{
 		
 		synchronized(resource1){
 			System.out.println(Thread.currentThread().getName()+" has locked resource1");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			   
 				}
@@ -64,12 +70,12 @@ public class DeadLock implements Runnable{
 					s1.setName("Rajesh Bajya");
 					System.out.println(Thread.currentThread().getName()+" has updated student name to "+s1.getName());
 				
-//				try{
-//					Thread.sleep(100);
-//				}
-//				catch(InterruptedException e){
-//					e.printStackTrace();
-//				}
+				try{
+					Thread.sleep(100);
+				}
+				catch(InterruptedException e){
+					e.printStackTrace();
+				}
 				synchronized(s2){
 					s2.setName("Vivek Poddar");
 					System.out.println(Thread.currentThread().getName()+" has updated student name to "+s2.getName());
@@ -103,7 +109,8 @@ public class DeadLock implements Runnable{
 		});
 		
 
-		
+		t1.setName("*********************************");
+		t2.setName("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
 		t1.start();
 		t2.start();
 		

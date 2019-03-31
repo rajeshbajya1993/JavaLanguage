@@ -3,7 +3,7 @@ package oops.reflections;
 public class Person {
 
 	public int roll;
-	public static String name;
+	public static String name="Rajesh";
 	protected String college;
 	
 	public Person() {
@@ -41,7 +41,10 @@ public class Person {
 	}
 	
 	public void check(String college, String name){
-		
+		getName1();
+	}
+	private static String getName1(){
+		return name;
 	}
 
 }

@@ -5,12 +5,14 @@ public class ThreadLocalVaribales implements Runnable{
 	String str2 = "Bajya";
 
 	public static void main(String[] args) {
-		ThreadLocalVaribales object = new ThreadLocalVaribales();
-		Thread t1 = new Thread(object,"Thread-A");
-		Thread t2  = new Thread(object,"Thread-B");
-		t1.start();
-		t2.start();
+//		ThreadLocalVaribales object = new ThreadLocalVaribales();
+//		Thread t1 = new Thread(object,"Thread-A");
+//		Thread t2 = new Thread(object,"Thread-B");
+//		t1.start();
+//		t2.start();
 
+		Thread t3 = new Thread(() -> {System.out.println("Hello rajesh");});
+		t3.start();
 	}
 
 	@Override
